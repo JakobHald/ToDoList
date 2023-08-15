@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    height: 100vh;
+    
+    background-color: rgb(243, 183, 183);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 35%;
+    height: 90%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow:
+    0 -1px 1px rgba(0,0,0,0.15),
+    20px -10px 0 -5px #eee,
+    0 -10px 1px -4px rgba(0,0,0,0.15),
+    -20px -20px 0 -10px #eee,
+    10px -2px 1px -9px rgba(0,0,0,0.15);
+
+}
+
+
+.h1Box{
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    width: 20%;
+    height: 50px;
+    background-color: lightcoral;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+
+
+.list{
+    font-size: clamp(0.9375rem, 0.5833rem + 1.8889vw, 2rem);
+    margin-bottom: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.bold{
+    text-decoration: line-through;
+    color: red;
+    animation: 0.3s tilt-shaking infinite linear;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+.taskBtn{
+    width: 150px;
+    height: 60px;
+    background-color: lightcoral;
+    border-radius: 20px;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    bottom: 10%;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1000px) {
+    .box{
+        width: 75%;
+    }
+}
